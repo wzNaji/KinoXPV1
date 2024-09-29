@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#search-bar {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+#sort-options {
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.movie {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.movie h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.movie p {
+    margin: 5px 0;
+}
