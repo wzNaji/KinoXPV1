@@ -22,8 +22,15 @@
   <option value="age-desc">Age Limit (High to Low)</option>
 </select>
 
+<!-- Genre Filter Dropdown -->
+<label for="genre-filter">Filter by Genre:</label>
+<select id="genre-filter" onchange="filterMoviesByGenre()">
+  <option value="all">All Genres</option>
+  <!-- Genre options will be added dynamically in JavaScript -->
+</select>
+
 <div id="movies-container"></div>
 
-<script src="../js/script.js"></script>
+<script src="/js/movies.js"></script>
 </body>
 </html>
