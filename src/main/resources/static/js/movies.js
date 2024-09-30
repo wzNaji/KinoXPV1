@@ -56,6 +56,10 @@ function displayMovies(movies) {
                     <p>Genre: ${movie.genre}</p>
                     <p>Duration: ${movie.duration} minutes</p>
                     <p>Age Limit: ${movie.ageLimit}+</p>
+                    <!-- view details button -->
+                    <a href="/movies/${movie.id}">
+                    <button>View betails</button>
+                    </a>
                 </div>
             `;
             container.innerHTML += movieElement;

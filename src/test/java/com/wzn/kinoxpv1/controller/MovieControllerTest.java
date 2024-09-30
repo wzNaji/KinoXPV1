@@ -19,7 +19,7 @@ import java.util.List;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest(MovieController.class) // Denne annotation tester kun web-laget, specifikt MovieController-klassen.
+@WebMvcTest(MovieRestController.class) // Denne annotation tester kun web-laget, specifikt MovieController-klassen.
 public class MovieControllerTest {
 
     @Autowired

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Listings</title>
+  <link rel="stylesheet" href="/css/movieList.css">
+</head>
+<body>
+
+<h1>Available Movies</h1>
+
+<!-- Filter Section -->
+<div id="filter-section">
+  <!-- Search Bar -->
+  <input type="text" id="search-bar" placeholder="Search for movies..." onkeyup="filterMovies()" />
+
+  <!-- Sorting -->
+  <label for="sort-options">Sort By:</label>
+  <select id="sort-options" onchange="sortMovies()">
+    <option value="title-asc">Title A-Z</option>
+    <option value="title-desc">Title Z-A</option>
+    <option value="age-asc">Age Limit (Low to High)</option>
+    <option value="age-desc">Age Limit (High to Low)</option>
+  </select>
+
+  <!-- Genre Filter Dropdown -->
+  <label for="genre-filter">Filter by Genre:</label>
+  <select id="genre-filter" onchange="filterMoviesByGenre()">
+    <option value="all">All Genres</option>
+    <!-- Genre options will be added dynamically in JavaScript -->
+  </select>
+</div>
+
+<!-- Movies Container -->
+<div id="movies-container"></div>
+
+<script src="/js/movies.js"></script>
+</body>
+</html>
