@@ -32,4 +32,7 @@ public class Movie {
 
     @Min(value = 0, message = "Age limit cannot be negative")
     private int ageLimit; // Aldersgrænse for film
+
+    @NotBlank(message = "Theater type is mandatory")
+    private String theaterType;  // 'large' or 'small'
 }

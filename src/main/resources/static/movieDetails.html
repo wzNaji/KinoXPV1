@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/movieDetails.css">
   <title>Movie Details</title>
 </head>
 <body>
@@ -12,6 +13,21 @@
 <div id="movie-details">
   <!-- JavaScript will dynamically load movie details here -->
 </div>
+
+<h3>Select Your Seats</h3>
+
+<!-- Seat chart container for better layout control -->
+<div id="seating-chart-container">
+  <div id="seating-chart"></div>
+</div>
+
+<!-- Reserve Button -->
+<div id="reserve-container">
+  <button id="reserve-seats" disabled>Reserve Selected Seats</button>
+</div>
+
+<!-- Reservation Status Message -->
+<div id="reservation-status"></div>
 
 <script src="/js/movieDetails.js"></script>
 </body>

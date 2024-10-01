@@ -58,7 +58,7 @@ function displayMovies(movies) {
                     <p>Age Limit: ${movie.ageLimit}+</p>
                     <!-- view details button -->
                     <a href="/movies/${movie.id}">
-                    <button>View betails</button>
+                    <button>View Details</button>
                     </a>
                 </div>
             `;

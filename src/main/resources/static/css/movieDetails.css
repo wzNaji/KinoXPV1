@@ -1,0 +1,40 @@
+/* Center the seating chart container */
+#seating-chart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Seat styling */
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: green;  /* Available seat */
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.reserved {
+    background-color: red;  /* Reserved seat */
+    cursor: not-allowed;    /* Not clickable */
+}
+
+.selected {
+    background-color: yellow;  /* Selected seat */
+}
+
+/* Layout and styling for the reserve button */
+#reserve-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling for the reservation status message */
+#reservation-status {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    color: green;
+}
