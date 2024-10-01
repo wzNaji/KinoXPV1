@@ -1,22 +1,18 @@
 package com.wzn.kinoxpv1.service;
 
-import com.wzn.kinoxpv1.entity.Movie;
 import com.wzn.kinoxpv1.entity.Seat;
 import com.wzn.kinoxpv1.repository.MovieRepository;
 import com.wzn.kinoxpv1.repository.SeatRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class SeatServiceImpl implements SeatService{
 
-    private final MovieRepository movieRepository;
     private final SeatRepository seatRepository;
 
-    public SeatServiceImpl(MovieRepository movieRepository, SeatRepository seatRepository) {
-        this.movieRepository = movieRepository;
+    public SeatServiceImpl(SeatRepository seatRepository) {
         this.seatRepository = seatRepository;
     }
 
